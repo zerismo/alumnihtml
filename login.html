@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/header_blue.css">
+    <link rel="stylesheet" href="css/screen2.css">
+    <link rel="stylesheet" href="css/styles_blue.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse header noPadTop noMarginTop noMarginBottom" role="navigation">
+    <div class="container fullWidth">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="row">
+            <div class="collapse navbar-collapse top-menu " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#index">Home</a></li>
+                    <li><a href="">Alumni Services</a></li>
+                    <li><a href="">My Profile</a></li>
+                    <li><a href="">Search</a></li>
+                    <li><a href="">Forums</a></li>
+                    <li><a href="/users/sign_in"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row logoRow centeredParent padTopSmall padBottomSmall" >
+            <div class="centeredChild" style:"float:left;clear:left;" >
+                <a href="" style="text-decoration:none !important; color:inherit;">
+                    <div class="navbar-brand"><img id="logo-header" src="images/nsit_logo2.png" alt="NSIT" title="NSIT"></div>
+                </a>
+            </div>
+            <div id="logo-head">
+                <strong>
+                    <a href="" style="text-decoration:none !important; color:inherit;">
+                        <h1 id="logo-tophead">Netaji Subhas Institute of Technology</h1>
+                        <h4 id="logo-subhead">(An Autonomous Institute of Govt. of NCT of Delhi)</h4>
+                    </a>
+                    <a href="http://www.du.ac.in/" target="_blank" style="text-decoration:none !important; color:inherit;">
+                        <h4 id="logo-subberhead">University of Delhi</h4>
+                    </a>
+                </strong>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <div class="container-fluid menuRow">
+        <div class="row centeredParent">
+            <!--<div class="col-md-2"></div>-->
+            <ul class="nav navbar-nav centeredChild">
+                <li class="dropdown menu-tab dropdown-large">
+                    <a href="#" class="dropdown-toggle menu-tab-a" data-toggle="dropdown">About</a>
+                    <ul class="dropdown-menu dropdown-menu-large row">
+                        <li class="col-sm-2">
+                            <ul>
+                                <li class="dropdown-header"><a href="">About NSIT</a></li>
+                                <li><a href="">Vision</a></li>
+                                <li><a href="">History</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-2">
+                            <ul>
+                                <li class="dropdown-header"><a href="">Campus</a></li>
+                                <!-- <li><a href="{{ url_for('administration') }}">About Campus</a></li> -->
+                                <!-- <li><a href="{{ url_for('director') }}">Gallery</a></li> -->
+                                <!-- <li class="divider"></li> -->
+                                <li><a href="">Location</a></li>
+                                <li><a href="">Blocks</a></li>
+                                <!--<li><a href="{{ url_for('under_construction') }}">FAQs</a></li>-->
+                            </ul>
+                        </li>
+                        <li class="col-sm-5"><p class="quote">One of India's most reputed institutions in the domain of technical education, NSIT has carved a niche for itself - both nationally and internationally - for excellence in education and research. The overall environment in the institution is highly conducive for growth and provides a quality learning atmosphere.</p></li>
+                        <li class="col-sm-3">
+                            <img src="" width="100%">
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown menu-tab dropdown-large">
+                    <a href="#" class="dropdown-toggle menu-tab-a" data-toggle="dropdown">Administration</a>
+                    <ul class="dropdown-menu dropdown-menu-large row">
+                        <li class="col-sm-2">
+                            <ul>
+                                <li><a href="">President </a></li>
+                                <li><a href="">Chairman</a></li>
+                                <li><a href="">Director</a></li>
+                                <li><a href="">Registrar</a></li>
+                                <li><a href="">Deans</a></li>
+                                <li><a href="">Proctor</a></li>
+                                <li><a href="">General Council</a></li>
+                                <li><a href="">Board of Governors</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-5"><p class="quote">The Administrative department works tediously to get the gears clicking in NSIT. Find information about the personnel in concern here.</p></li>
+                        <li class="col-sm-3">
+                            <img src="{{ url_for('static', filename='images/index_carousel/navbar_administration.jpg') }}" width="100%">
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown menu-tab dropdown-large">
+                    <a href="#" class="dropdown-toggle menu-tab-a" data-toggle="dropdown">Academics</a>
+                    <ul class="dropdown-menu dropdown-menu-large row">
+                        <li class="col-sm-3">
+                            <ul>
+                                <li class="dropdown-header"><a href="">Divisions</a></li>
+                                <li><a href="">Electronics and Communication</a></li>
+                                <li><a href="">Computer Engineering</a></li>
+                                <li><a href="{{ url_for('dept_geninfo',deptname='ice') }}">Instrumentation and Control</a></li>
+                                <li><a href="{{ url_for('dept_geninfo',deptname='it') }}">Information Technology</a></li>
+                                <li><a href="{{ url_for('dept_geninfo',deptname='mpae') }}">Manufacturing Processes and Automation</a></li>
+                                <li><a href="{{ url_for('dept_geninfo',deptname='bt') }}">Biotechnology</a></li>
+                                <li><a href="{{ url_for('dept_geninfo',deptname='mg') }}">Management</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-2">
+                            <ul>
+                                <li class="dropdown-header"><a href="{{ url_for('department') }}">Departments</a></li>
+                                <li><a href="{{ url_for('dept_geninfo',deptname='hss') }}">Humanities and Social Sciences</a></li>
+                                <li><a href="{{ url_for('dept_geninfo',deptname='mth') }}">Mathematics</a></li>
+                                <li><a href="{{ url_for('dept_geninfo',deptname='phy') }}">Physics</a></li>
+                                <li><a href="{{ url_for('dept_geninfo',deptname='chem') }}">Chemistry</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-2">
+                            <ul>
+                                <li class="dropdown-header"><a href="{{ url_for('academics') }}">Courses</a></li>
+                                <li><a href="{{ url_for('academics') }}">Undergraduate</a></li>
+                                <li><a href="{{ url_for('academics') }}">Postgraduate</a></li>
+                                <li><a href="{{ url_for('academics') }}">Ph.D</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header"><a href="{{ url_for('research') }}">Research and Development</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-2"><p class="quote">A total of 11 academic divisions and departments work in conjunction to ensure that students receive the highest quality education possible and that all topics are assimilated fully.</p></li>
+                        <li class="col-sm-3">
+                            <img src="{{ url_for('static', filename='images/index_carousel/navbar_academics.jpg') }}" width="100%">
+                        </li>
+                    </ul>
+                </li>
+
+                
+                <li class="dropdown menu-tab dropdown-large">
+                    <a href="#" class="dropdown-toggle menu-tab-a" data-toggle="dropdown">Media</a>
+                    <ul class="dropdown-menu dropdown-menu-large row">
+                        <li class="col-sm-2">
+                            <ul>
+                                <li class="dropdown-header"><a href="">News</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header"><a href="#">Digital Media</a></li>
+                                <li><a href="">Photo Gallery</a></li>
+                                <li><a href="">Video Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-2">
+                            <ul>
+                                <li class="dropdown-header"><a href="#">Other Media</a></li>
+                                <li><a href="">Newspapers/Magazines</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-5"><p class="quote">Find NSIT related news published in various media sources, and photo gallery here.</p></li>
+                        <li class="col-sm-3">
+                            <img src="" width="100%">
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown menu-tab dropdown-large">
+                    <a href="#" class="dropdown-toggle menu-tab-a" data-toggle="dropdown">Life at NSIT</a>
+                    <ul class="dropdown-menu dropdown-menu-large row">
+                        <li class="col-sm-2">
+                            <ul>
+                                <li class="dropdown-header"><a href="#">Campus Life</a></li>
+                                <li><a href="">Housing</a></li>
+                                <li><a href="">Hostels</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header"><a href="#">Student Activities</a></li>
+                                <li><a href="">Societies/Clubs</a></li>
+                                <li><a href="">Fests</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-2">
+                            <ul>
+                                <li class="dropdown-header"><a href="">Student Facilities</a></li>
+                                <li><a href="">Sports</a></li>
+                                <li><a href="">Shopping</a></li>
+                                <li><a href="">Canteens</a></li>
+                                <li><a href="">Bank</a></li>
+                                <li><a href="">Medical Help</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-sm-5"><p class="quote">NSIT has a beautifully landscaped and fully residential campus, sprawling 145 acres of land. A prominent feature of NSIT’s campus is the vast expanse of flora &amp; fauna that envelopes its entirety. The campus welcomes a diverse community of students, faculty, staff &amp; visitors in its midst. Extra-curricular activities thrive at NSIT, giving students a chance to further indulge in their interests.</p></li>
+                        <li class="col-sm-3">
+                            <img src="{{ url_for('static', filename='images/index_carousel/navbar_life.jpg') }}" width="100%">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--END OF HEADER-->
+<br><br><br><br>
+<div class="login-block">
+    <h1>Login</h1>
+    <input type="text" value="" placeholder="Username" id="username" />
+    <input type="password" value="" placeholder="Password" id="password" />
+    <button>Submit</button>
+</div>
+<br><br>
+
+<!--End of form-->
+
+
+<footer class="nsit-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="headline">
+          <h2>NSIT</h2>
+        </div>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Director</a></li>
+          <!--<li><a href="{{ url_for('administration') }}">Administration</a></li>-->
+          <li><a href="">Academics</a></li>
+          <li><a href="">Admissions</a></li>
+          <li><a href="">Divisions</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="headline">
+          <h2>Quick Links</h2>
+        </div>
+        <ul>
+          <li><a href="">Tenders</a></li>
+          <li><a href="">RTI</a></li>
+          <li><a href="">Alumni</a></li>
+          <li><a href="">Courses</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="headline">
+          <h2>Useful Links</h2>
+        </div>
+        <ul>
+          <li><a href="">Placement</a></li>
+          <li><a href="">Central Library</a></li>
+          <li><a href="">Recruitment<sup style="color:orange;">&nbsp;New</sup></a></li>
+          <li><a href="">Result</a></li>
+          <li><a href="">Disclaimer</a></li>
+          <li><a href="">Photo Gallery</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="headline">
+          <h2>Social Media</h2>
+        </div>
+        <div class="social-bar">
+          <ul>
+            <li><a href="#"> <span class="icon icon-facebook fa fa-facebook-square"></span> Facebook</a></li>
+            <li><a href="#"> <i class="icon icon-twitter fa fa-twitter-square"></i> Twitter</a></li>
+            <li><a href="https://plus.google.com/108482331508099606708" target="_blank"> <i class="icon icon-google-plus fa fa-google-plus-square"></i> Google Plus</a></li>
+            <li><a href="https://www.youtube.com/channel/UCCcmvRu9YeAWjqOEI4cOcjQ" target="_blank"> <i class="icon icon-youtube fa fa-youtube-square"></i> Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+     <p style="display:inline-block;">Copyright &copy; 2015 Netaji Subhas Institute of Technology. All Rights Reserved.</p>
+     <p style="float:right;">Designed and Developed by <a href="">Web Team NSIT</a>
+    </div>
+  </div>
+</footer>
+
+</body>

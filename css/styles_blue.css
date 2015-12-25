@@ -1,0 +1,96 @@
+.fullWidth {
+    width:100% !important;
+}
+.centeredChild {
+    float: none !important;
+    display: inline-block !important;
+}
+.centeredParent {
+    text-align: center !important;
+}
+.leftFloated {
+    float: left !important
+}
+.noPaddingSideways {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.noPadLeft {
+    padding-left: 0px !important;
+}
+.noPadTop {
+    padding-top: 0px !important;
+}
+.padTopSmall {
+    padding-top: 5px !important;
+}
+.padBottomSmall {
+    padding-bottom: 5px !important;
+}
+.padTopMedium {
+    padding-top: 10px !important;
+}
+.padBottomMedium {
+    padding-bottom: 10px !important;
+}
+.padTopLarge {
+    padding-top: 15px !important;
+}
+.padBottomLarge {
+    padding-bottom: 15px !important;
+}
+.padLeftLarge {
+    padding-left: 15px !important;
+}
+.padTopVeryLarge {
+    padding-top: 20px !important;
+}
+.noMarginTop {
+    margin-top: 0px !important;
+}
+.noMarginBottom {
+    margin-bottom: 0px !important;
+}
+.hugeFont {
+    font-size: 48px !important;
+}
+.whiteBackground {
+    background-color: #FFFFFF;
+}
+
+.future img{
+    width : 100%;
+    height: auto;
+}
+.future {
+    margin-top: 5%;
+    width :94%;
+    font-family: "firasans","Helvetica Neue",Arial,sans-serif; 
+    color: white;
+}
+
+.future a {
+    color : white;
+}
+.green{
+    background-color: darkred;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+}
+
+
+.blue {
+    background-color: #006EAF;
+background-image: none;
+background-repeat: repeat;
+background-attachment: scroll;
+background-position: 0% 0%;
+background-clip: border-box;
+background-origin: padding-box;
+background-size: auto auto;
+}

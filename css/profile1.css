@@ -1,0 +1,59 @@
+.profdets{
+	text-align: center;
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ecf0f1;
+	padding: 10px 10px 40px 10px;
+}
+
+.namer{
+	color:#0082CC;
+	font-size: 20px;
+}
+
+.dets{
+	margin-top: 5px;
+	color:#999;
+}
+.stats{
+	margin-left: 60px;
+}
+
+.stat{
+	border-right: solid 1px rgba(0,0,0,0.1);
+	border-left: solid 1px rgba(0,0,0,0.1);
+}
+
+.stathead{
+	font-size:8px;
+}
+
+.statnumber{
+	font-weight: 700;
+}
+.highlights{
+	border-radius: 20px;
+	background-color: #ecf0f1;
+	padding: 10px;
+}
+
+#post{
+	height:35px;
+	width:100%;
+	border-radius: 50px;
+	border: none;	
+}
+
+.btnpost{
+	float:right;
+}
+
+.navpost li{
+	color:#999;
+}
+
+.feedhead{
+	font-size: 30px;
+	font-weight: 500;
+}

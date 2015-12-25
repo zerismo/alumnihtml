@@ -1,0 +1,309 @@
+.container {
+    margin-top: 20px;
+}
+
+/* Carousel Styles */
+.carousel-indicators .active {
+    background-color: #2980b9;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 450px !important;
+}
+
+.carousel-control {
+    width: 0;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	background-image: none;
+	background-repeat: no-repeat;
+	text-shadow: none;
+}
+
+.carousel-control.left span {
+	padding: 15px;
+}
+
+.carousel-control.right span {
+	padding: 15px;
+}
+
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right, 
+.carousel-control .icon-prev, 
+.carousel-control .icon-next {
+	position: absolute;
+	top: 45%;
+	z-index: 5;
+	display: inline-block;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+	left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+	right: 0;
+}
+
+
+
+.carousel-control.left span:hover,
+.carousel-control.right span:hover {
+	opacity: .7;
+	filter: alpha(opacity=70);
+}
+
+/* Carousel Header Styles */
+.header-text {
+    position: absolute;
+    top: 20%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+
+.header-text h2 {
+    font-size: 4vw;
+}
+
+.header-text h2 span {
+    background-color: #2980b9;
+	padding: 10px;
+}
+
+.header-text h3 span {
+	font-size: 2vw;
+	background-color: #000;
+	padding: 15px;
+}
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-theme {
+    color: #fff;
+    border: 1px solid #fff !important;
+    background-color: transparent;
+    margin-right: 15px;
+}
+
+.btn-theme:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+
+.car-back{
+	background-color: #fff;
+	padding: 5px 5px 5px 5px;
+	border: 1px solid rgba(0, 0, 0, .5);
+	}
+
+#slide2head{
+	transition-delay: 2s;
+	color:#fff;
+	font-size: 20px;
+	background-color: #000;
+	padding: 3px;
+}
+
+#item2{
+	position: fixed;
+	bottom: 80px;
+	left:80px;
+}
+
+.btn-theme-2{
+	background-color: #000;
+	color:#fff;
+}
+
+
+.btn-theme-2:hover{
+	background-color: #2980b9;
+	color: #fff;
+}
+
+#fbpage{
+width: 280px;
+height: 350px;
+background-color: #e5e5e5;
+ }
+
+.subhead{
+	font-size: 20px;
+	font-weight: 700; 
+	color:#1EA9EA;
+}
+
+.disc{
+	width: 150px;
+	height: 150px;
+	float:left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.textcol{
+	font-size: 15px;
+}
+
+.btnsub{
+	background-color: #000;
+	color:#fff;
+}
+
+.dater{
+	width: 100px;
+	height: 100px;
+	background: #e74c3c;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	color:#fff;
+}
+
+.date{
+	font-size: 30px;
+}
+
+
+.eventtitle{
+	font-size: 20px;
+}
+
+
+.focus1{
+padding :15px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3498db+0,53cbf1+100,2980b9+100 */
+background: #3498db; /* Old browsers */
+background: -moz-linear-gradient(left,  #3498db 0%, #53cbf1 100%, #2980b9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #3498db 0%,#53cbf1 100%,#2980b9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #3498db 0%,#53cbf1 100%,#2980b9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3498db', endColorstr='#2980b9',GradientType=1 ); /* IE6-9 */
+
+	color:#fff;
+	margin-bottom: 0px;
+}
+
+.jumbohead{
+	font-size: 50px;
+}
+
+.jumboheadsub{
+	font-size: 20px;
+}
+
+.subscribe input{
+	height: 30px;
+	background-color: transparent;
+	border-radius: 5px;
+	width : 250px;
+	border: solid 1px #fff;
+}
+
+.subscribe input:focus{
+	background-color: #fff;
+	color :#000;
+	border: solid 2px #2980b9;
+	transition: ease-in-out, width .35s ease-in-out;
+
+}
+
+.subo{
+	padding:5px;
+	background-color: transparent;
+	border-right: solid;
+	border-color: rgba(0,0,0,0.1);
+	border-width: 1px;
+}
+
+
+.news img{
+	border-radius: 50%;
+	float: left;
+}
+
+.textcol2{
+	color: #999;
+	font-size: 12px;
+}
+
+.newshead{
+	color:#3498db;
+	font-size :20px;
+}
+
+.newcont{
+	margin-left: 40px;
+}
+
+.yo{
+	color:#fff;
+	background-color: #2980b9;
+	padding:10px 0 20px 0;
+}
