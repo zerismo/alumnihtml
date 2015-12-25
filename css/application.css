@@ -307,3 +307,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3498db', end
 	background-color: #2980b9;
 	padding:10px 0 20px 0;
 }
+
+.photogall img{
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.grid-item--height2 img{ height: 100px; }
+
+
+.grid-item--height3 img{ height: 50px; }
+
+
+.grid-item:hover{
+	opacity:0.7;
+}
+
+.grid-item--width2 img{ width: 50px;}

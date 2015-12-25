@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
+
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/application.css">
     <link rel="stylesheet" href="css/header_blue.css">
@@ -21,6 +23,14 @@
   	js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
   	fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
+
+    <script type="text/javascript">
+    var grid = document.querySelector('.grid');
+    var msnry = new Masonry( grid, {
+  // options...
+    itemSelector: '.grid-item',
+    columnWidth: 200
+    });</script>
     <!--HEADER-->
 
 
@@ -422,12 +432,18 @@
     </div>
     <hr>
 
-    <div class="col-sm-4 subo">
+    <div class="col-sm-6 subo photogall">
         <div class="subhead">PHOTO GALLERY</div>
         <hr>
-        <img src="" style="width:100px;height:100px">
+            <div class="grid js-masonry"
+            data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+            <div class="grid-item"><img src="http://www.nsit.ac.in/static/images/NSITWebPhotos/Infrastructure/11.jpg"></div>
+            <div class="grid-item grid-item--height2"><img src="http://www.nsit.ac.in/static/images/NSITWebPhotos/Fests/32.jpg"></div>
+            <div class="grid-item grid-item--height3"><img src="http://www.nsit.ac.in/static/images/NSITWebPhotos/Academics/dsc_1788.jpg"></div>
+            <div class="grid-item grid-item--width2"><img src="http://www.nsit.ac.in/static/images/NSITWebPhotos/AlumniTalk_IS_NG/img2.jpg"></div>
+            </div>
+
     </div>
-    <hr>
     
             
     </div>
